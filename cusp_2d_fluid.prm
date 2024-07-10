@@ -8,13 +8,13 @@ set dimension = 2
 #---------------------------------------------------
 
 subsection simulation control
-  set method             = bdf2
-  set time end		     = 5
-  set time step          = 0.001
-  set output name        = cusp-output
-  set output frequency   = 20
-  set output path        = ./1803_/
-  set subdivision        = 2
+  set method           = bdf2
+  set time end	       = 5
+  set time step        = 0.001
+  set output name      = cusp-output
+  set output frequency = 20
+  set output path      = output
+  set subdivision      = 2
 end
 
 #---------------------------------------------------
@@ -96,7 +96,7 @@ subsection physical properties
 	  set R                  = 287.05
 	  set T                  = 293.15
     end
-    set kinematic viscosity  = 14.8e-6
+    set kinematic viscosity = 14.8e-6
   end
   subsection fluid 1
     set density model       = constant
@@ -106,12 +106,12 @@ subsection physical properties
   set number of material interactions = 1
   subsection material interaction 0
     set type = fluid-fluid
-	subsection fluid-fluid interaction
-	  set first fluid id              = 0
+    subsection fluid-fluid interaction
+      set first fluid id              = 0
       set second fluid id             = 1
       set surface tension model       = constant
-	  set surface tension coefficient = 0.034
-	end
+      set surface tension coefficient = 0.034
+    end
   end
 end
 
@@ -139,12 +139,12 @@ end
 #---------------------------------------------------
 
 subsection mesh adaptation
-  set type                 	   = kelly
-  set variable             	   = phase, velocity
-  set fraction type        	   = fraction
+  set type                     = kelly
+  set variable                 = phase, velocity
+  set fraction type            = fraction
   set max refinement level     = 4
-  set min refinement level	   = 2
-  set frequency            	   = 1
+  set min refinement level     = 2
+  set frequency                = 1
   set max number elements      = 25000
   set fraction refinement      = 0.999, 0.4
   set fraction coarsening      = 0.001, 0.05
@@ -156,7 +156,7 @@ end
 #---------------------------------------------------
 
 subsection boundary conditions
-  set number 		 = 4
+  set number         = 4
   set time dependent = false
   subsection bc 0
     set type = function
@@ -255,27 +255,27 @@ end
 
 subsection linear solver
   subsection fluid dynamics
-    set verbosity                          	      = verbose
-    set method                             	      = gmres
-    set max iters                          	      = 1000
+    set verbosity                          	  = verbose
+    set method                             	  = gmres
+    set max iters                          	  = 1000
     set relative residual                         = 1e-3
     set minimum residual                          = 1e-5
-	set preconditioner						      = amg
+    set precondition				  = amg
     set amg preconditioner ilu fill               = 0
     set amg preconditioner ilu absolute tolerance = 1e-12
     set amg preconditioner ilu relative tolerance = 1.00
-	set max krylov vectors 					      = 200
+    set max krylov vectors 			  = 200
   end
   subsection VOF
-    set verbosity                          	      = verbose
-    set method                             	      = gmres
-    set max iters                          	      = 1000
+    set verbosity                          	  = verbose
+    set method                             	  = gmres
+    set max iters                          	  = 1000
     set relative residual                         = 1e-3
     set minimum residual                          = 1e-12
-	set preconditioner						      = amg
+    set preconditioner				  = amg
     set amg preconditioner ilu fill               = 0
     set amg preconditioner ilu absolute tolerance = 1e-12
     set amg preconditioner ilu relative tolerance = 1.00
-	set max krylov vectors 					      = 200
+    set max krylov vectors 			  = 200
   end
 end
