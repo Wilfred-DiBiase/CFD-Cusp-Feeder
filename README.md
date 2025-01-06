@@ -8,7 +8,7 @@ This repository provides all the code files in the paper "Exploring the potentia
 
 Please refer to the installation guide on the Lethe documentation page:
 
-https://chaos-polymtl.github.io/lethe/documentation/installation/installation.html
+<a href="https://chaos-polymtl.github.io/lethe/documentation/installation/installation.html" target="_blank">Lethe Installation Documentation</a>
 
 ## Code explanation
 
