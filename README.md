@@ -26,7 +26,7 @@ This is the Lethe .prm file for the...
 
 ### [cusp_2d_tracer.prm](./cusp_2d_tracer.prm)
 
-This is the .prm file to run a tracer simulation using the same computational domain. Although it is not featured in the paper because there are small problems with the code, we thought it would be useful to include it in this depository for further studies.
+This is the .prm file to run a tracer simulation using the same computational domain. Although it is not featured in the paper because there are small problems with the code, we thought it would be useful to include it in this repository for further studies.
 
 ## Citing
 
