@@ -28,6 +28,8 @@ This is the Lethe .prm file for the...
 
 This is the .prm file to run a tracer simulation using the same computational domain. Although it is not featured in the paper because there are small problems with the code, we thought it would be useful to include it in this repository for further studies.
 
+Once the simulations have run, the results can be analysed by opening the associated .pvd files in Paraview.
+
 ## Citing
 
 Please cite the accompanying paper:
