@@ -4,13 +4,9 @@
 
 This repository provides all the code files in the paper "Exploring the potential of a 'cusp feeder' as a novel mixer using direct numerical simulation".
 
-<br>
-
 ## Installing Lethe
 
 For instructions on installation, please refer to the <a href="https://chaos-polymtl.github.io/lethe/documentation/installation/installation.html" target="_blank">Lethe installation guide</a>.
-
-<br>
 
 ## Code explanation
 
@@ -33,8 +29,6 @@ More information about Lethe can be found on Github <a href="https://github.com/
 This is the .prm file for running a tracer simulation using the same computational domain. Although it is not featured in the paper because the code has small problems, we thought it would be useful to include it in this repository for further studies.
 
 Once the simulations have run, the results can be analysed by opening the associated .pvd files in <a href="https://www.paraview.org/" target="_blank">Paraview</a>.
-
-<br>
 
 ## Citing
 
