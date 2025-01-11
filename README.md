@@ -20,7 +20,7 @@ This is the GMSH .msh file created from the .geo file and called upon by Lethe.
 
 ### [cusp_2d_fluid.prm](./cusp_2d_fluid.prm)
 
-This is the Lethe .prm file for the...
+This is the .prm file to run the simulation in Lethe. All aspects of the code have been outlined in the associated paper.
 
 More information about Lethe can be found on Github <a href="https://github.com/chaos-polymtl/lethe" target="_blank">here</a>.
 
